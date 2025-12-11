@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="top-section">
+    <button id="themeBtn">Dark Mode</button>
+
+    <header class="navbar"> 
+        <h2> 
+            <a href="#home">Home</a> | 
+            <a href="#about">About Me</a> |
+            <a href="garcia_lab1.html">Lab 1</a> | 
+            <a href="garcia_lab2.html">Lab 2</a> | 
+            <a href="garcia_lab3.html">Lab 3</a> | 
+            <a href="garcia_lab4.html">Lab 4</a>
+            </h2>
+    </header>
+
+    <p id="greetingMessage"></p>
+</div>
+
+<hr>
+ 
+<section id="main-content"> 
+    <div class="left-column">
+      <div id="home">
+            <img src="garciaprofile.jpg" alt="Profile Image" class="profile-img"><br><br>
+            <h2 class="name">Sunshine Garcia</h2>
+            <span class="job-title" id="jobTitle">Web Developer</span>
+
+            <button id="editJobBtn">Edit Job Title</button>
+    </div> 
+
+<hr>
+
+      <div class="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><strong>Phone:</strong> +63 9456 559 277</li>
+            <li><strong>Email:</strong> garciasi@students.nu-fairview.edu.ph</li>
+            <li><strong>Address:</strong> Culiat, Tandang Sora, Quezon City</li>
+          </ul>
+      </div>
+
+      <hr>
+
+      <button id="toggleSkillsBtn">Hide Skills</button>
+
+      <div class="skills" id="skillsSection">
+          <h3>Skills</h3>
+          <ul>
+                <li>Work Under Pressure</li>
+                <li>Adaptability</li>
+                <li>Problem Solving</li>
+                <li>Collaboration</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <button id="toggleLanguagesBtn">Hide Languages</button>
+        <div class="languages" id="languagesSection">
+            <h3>Languages</h3>
+            <ul>
+                <li>English</li>
+                <li>Filipino</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div id="about">
+            <h2>About Me</h2>
+            <p>
+                I’m a passionate web developer dedicated to building digital experiences that are accessible, user-centered, and impactful.
+                My goal is to use my skills and creativity to develop websites and applications that make people’s lives easier and more enjoyable.
+                I value collaboration, inclusivity, and continuous learning, and I strive to create online environments that are safe, welcoming, and supportive for all users.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="message-form">
+            <h2>Message Me</h2>
+            <form action="submit" method="post">
+                <p>Name:<br><input type="text" id="nameField" name="name"></p>
+                <p>Email:<br><input type="email" id="emailField" name="email"></p>
+                <p>Message:<br><textarea id="msgBox" maxlength="200"></textarea></p>
+                <p>Characters left: <span id="counter">200</span></p>
+
+                <p><input type="submit" value="Send" onclick="return validateForm()"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<hr>
+ 
+<footer>
+    <p><strong>WebProg - Web Programming 2025</strong></p>
+    <p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>
